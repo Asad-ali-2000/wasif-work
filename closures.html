@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closures</title>
+</head>
+<body>
+   <button id="green">green</button>
+   <button id="yellow">yellow</button>
+    <script>
+           const name = "Ahsan";
+        function main(color) {
+         
+         return   function inner() {
+                document.body.style.backgroundColor = `${color}`;
+                
+            }
+         
+        }
+        document.getElementById("green").onclick = main("green");
+        document.getElementById("yellow").onclick = main("yellow");
+        
+    </script>
+</body>
+</html>
